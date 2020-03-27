@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+/*重置浏览器的默认样式*/
+
+body,h1,h2,h3,ul,li,img,p{ padding:0; margin:0; list-style:none; boeder:0;font-family:jianzhi;}
+/*全局控制*/
+body{font-size:14px; font-family:"font/BOOMBOX.TTF","font/FZJZJW.TTF"; color:#FFF;}
+@font-face{font-family:jianzhi; src:url(font/FZJZJW.TTF);}
+
+.all{                   /*整理控制最外层的大盒子*/
+	width:1000px;
+	height:200px;
+	margin:190px auto;
+	border:8px solid #000000;
+	border-radius:100px/50px;
+	padding:0 20px;
+	background:#009900;
+}
+.txt{                  /*整理控制标题和播放按钮*/
+	height:50px;
+	line-height:50px;
+	align="center"
+	color:#A84848;
+}
+
+.txt a:link,.txt a:visited{  /*播放按钮的默认样式*/
+	color:#A84848;
+	text-decoration:none;
+	background:url(images/play1.png) no-repeat left center;
+}
+
+.txt a:hover{                /*鼠标移上播放按钮时的样式*/
+	color:#000;
+	background:url(images/play2.png) no-repeat left center;
+}
+.con li{
+	width:150px;
+	height:90px;
+	float:left; 
+	padding:20px 0 0 90px;
+}
+.people{background:#660033 url(images/icon1.png) no-repeat 15px 15px;}
+.people:hover{ background:#313131 url(images/icon5.png) no-repeat 15px 15px;}
+.film{ background:#330066 url(images/icon4.png) no-repeat 15px 15px;}
+.film:hover{ background:#313131 url(images/icon8.png) no-repeat 15px 15px;}
+.community{ background:#333399 url(images/icon3.png) no-repeat 15px 15px;}
+.community:hover{ background:#313131 url(images/icon7.png) no-repeat 15px 15px;}
+.music{ background:#333366 url(images/icon2.png) no-repeat 15px 15px;;}
+.music:hover{ background:#313131 url(images/icon6.png) no-repeat 15px 15px;;}
+.people h2,.film h2,.community h2,.music h2{ font-size:44px;align="center"}
+.people p,.film p, .community p,.music p{ line-height:22px;}
+.people a:link,.people:visited,.film a:link,.film a:visited,.community a:link,.community a:visited,.music a:link,.music a:visited{
+	color:#FFF;
+	text-decoration:none;
+}
