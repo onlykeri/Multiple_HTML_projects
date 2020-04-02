@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>档案</title>
+<link href="control.css" rel="stylesheet" type="text/css"/>
+<script language="Javascript" type="text/javascript"
+   src="control.js">
+</script> 
+</head>
+<body background="image/Debian.jpg">
+<div class="all"> 	
+    <form class="list" action="#" method="post">
+        <h2>档案</h2>
+        <p>
+        	<input type="text" value="昵称" class="txt" >
+        </p>
+        <p>
+        	<input type="text" value="年龄" class="age" >
+        </p>
+        <p class="choose">
+            <label><input type="radio" name="sex"> 男</label>
+            <label><input type="radio" name="sex"> 女</label>
+        </p>
+        <p class="choose">
+            <label><input type="checkbox" > 
+            老手</label>
+          <label><input type="checkbox" > 新人</label>
+            <label><input type="checkbox" > 过客</label>
+            <label><input type="checkbox" > 入住</label>
+        </p>
+        <p>
+            <select class="course">
+       			 <optgroup label="北京">
+            		<option>东城区</option>
+           			<option>西城区</option>
+            		<option>朝阳区</option>
+            		<option>海淀区</option>
+        		</optgroup>
+       			<optgroup label="上海">
+            		<option>浦东新区</option>
+           		 	<option>徐汇区</option>
+            		<option>虹口区</option>
+        		</optgroup>
+   		 	</select>
+        </p>
+        <p class="money_box">
+            <input type="text" value="期望赏金" class="money"><span> 元/月</span>
+        </p>
+        <p>
+        	<input type="submit" class="btn" value="提  交">
+        </p>
+    </form>
+    <hr>
+    <h1 id="head1">
+		屈原《离骚》</h1>
+	<hr>
+	<p id="p1">
+		路漫漫其修远兮，</br>吾将上下而求索。
+	</p>
+	<form name="form1">
+	<b style="color:white">Heading color: </b>
+		<select name="heading" onChange="changehead();">
+  		 	<option value="black">Black</option>
+   			<option value="red">Red</option>
+   			<option value="blue">Blue</option>
+   			<option value="green">Green</option>
+   			<option value="yellow">Yellow</option>
+		</select>
+	<b style="color:white">Body text color: </b>
+		<select name="body" onChange="changebody();">
+   			<option value="black">Black</option>
+   			<option value="red">Red</option>
+   			<option value="blue">Blue</option>
+   			<option value="green">Green</option>
+   			<option value="yellow">Yellow</option>
+		</select>
+	</form>
+    <div id="datetime" align="right" style="color:green";>
+   	 	<script>
+        	setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleString();", 1000);
+    	</script>
+    </div>
+</div>
+</body>
+</html>
