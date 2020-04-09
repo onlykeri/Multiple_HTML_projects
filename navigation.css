@@ -6,6 +6,10 @@ body,h1,h2,h3,ul,li,img,p{ padding:0; margin:0; list-style:none; boeder:0;font-f
 /*全局控制*/
 body{font-size:14px; font-family:"font/BOOMBOX.TTF","font/FZJZJW.TTF"; color:#FFF;}
 @font-face{font-family:jianzhi; src:url(font/FZJZJW.TTF);}
+@font-face {
+    font-family: MD;//自定义字体名称
+    src: url(font/MD.TTF);
+}
 
 .all{                   /*整理控制最外层的大盒子*/
 	width:1000px;
